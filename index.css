@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+}
+
+::--webkit-scrollbar{
+    width: 8px;
+    background-color: gray;
+}
+
+.setting{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.banner{
+    width: 55%;
+    align-self: center;
+    padding: 8px;
+}
+
+.content{
+    justify-content: space-around;
+    display: flex;
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.App{
+    min-height: 98vh;
+    width: 100%;
+    border: 8px solid #39445a93;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .divider{
+    margin: 10px;
+    width: 100%;
+} */
+
+.title{
+    text-transform: uppercase;
+    font-size: 8vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .banner{
+        width: 85%;
+        padding: 0;
+        padding-top: 20px;
+    }
+    .setting{
+        width: 100%;
+    }
+}
+
+.setting_select{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    flex: 0.8;
+    justify-content: space-evenly;
+}
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subtitile{
+    font-size: 25px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 2px black;
+    padding: 5px 10px;
+}
